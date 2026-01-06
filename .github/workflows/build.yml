@@ -40,7 +40,6 @@ jobs:
       - name: Build (left)
         run: |
           west build -s zmk/app -d build/left -b $BOARD_NAME -- -DSHIELD=$SHIELD
-          cat -n build/left/zephyr/${BOARD_NAME}.dts.pre.tmp
 
       - name: Upload (left)
         uses: actions/upload-artifact@v4
