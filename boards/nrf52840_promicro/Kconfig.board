@@ -1,0 +1,3 @@
+config BOARD_NRF52840_PROMICRO
+    bool "nRF52840 Pro Micro"
+    depends on SOC_NRF52840

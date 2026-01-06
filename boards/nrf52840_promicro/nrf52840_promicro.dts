@@ -1,0 +1,13 @@
+/dts-v1/;
+
+#include <nordic/nrf52840_qiaa.dtsi>
+
+/ {
+    model = "nRF52840 Pro Micro";
+    compatible = "nordic,nrf52840-qiaa";
+
+    chosen {
+        zephyr,console = &uart0;
+        zephyr,flash-controller = &flash0;
+    };
+};

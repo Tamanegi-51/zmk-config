@@ -1,0 +1,7 @@
+identifier: nrf52840_promicro
+name: "nRF52840 Pro Micro"
+type: board
+arch: arm
+platform: nrf52840
+toolchain:
+  - zephyr
