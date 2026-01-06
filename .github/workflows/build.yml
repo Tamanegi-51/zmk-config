@@ -46,7 +46,7 @@ jobs:
           cat -n build/left/zephyr/${BOARD_NAME}.dts.pre.tmp
 
       - name: Upload (left)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: firmware-left
           path: build/left/zephyr/zmk.uf2
