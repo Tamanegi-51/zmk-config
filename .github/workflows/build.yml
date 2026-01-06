@@ -37,8 +37,9 @@ jobs:
       - name: West Update
         run: west update
 
-      - name: West Zephyr Export
-        run: west zephyr-export
+      # ⚠️ 一時的に Zephyr Export を無効化（ZMK側のバグ回避）
+      # - name: West Zephyr Export
+      #   run: west zephyr-export
 
       - name: Build (left)
         run: |
