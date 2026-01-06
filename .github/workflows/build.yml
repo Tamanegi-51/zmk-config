@@ -34,10 +34,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      # ✅ west init は削除
-      # - name: West Init
-      #   run: west init -l config
-
       - name: West Update
         run: west update
 
